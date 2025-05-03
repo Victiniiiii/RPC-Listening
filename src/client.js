@@ -467,6 +467,7 @@ class RPCClient extends EventEmitter {
    * @param {number} [pid] The application's process ID. Defaults to the executing process' PID.
    * @returns {Promise}
    */
+
   setActivity(args = {}, pid = getPid()) {
     let timestamps;
     let assets;
@@ -514,7 +515,7 @@ class RPCClient extends EventEmitter {
         spectate: args.spectateSecret,
       };
     }
-
+        
     return this.request(RPCCommands.SET_ACTIVITY, {
       pid,
       activity: {
@@ -526,6 +527,7 @@ class RPCClient extends EventEmitter {
         secrets,
         buttons: args.buttons,
         instance: !!args.instance,
+        type: 2,
       },
     });
   }

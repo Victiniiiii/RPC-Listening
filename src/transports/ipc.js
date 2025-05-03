@@ -152,6 +152,7 @@ class IPCTransport extends EventEmitter {
   }
 
   send(data, op = OPCodes.FRAME) {
+    if (!this.socket || this.socket.destroyed) return;
     this.socket.write(encode(op, data));
   }
 

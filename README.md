@@ -1,3 +1,7 @@
+Victiniiiii update: Added type: 2 here (Line: 530)
+
+![image](https://github.com/user-attachments/assets/7ebdd4de-3b8c-4e08-906c-898ec86b2182)
+
 <div align="center">
   <br />
   <p>
